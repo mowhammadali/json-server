@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "0873",
+      "email": "a@gmail.com",
+      "password": "sfdfs"
+    },
+    {
+      "id": "b31a",
+      "email": "a@gmail.com",
+      "password": "44"
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$.pxxlDAgibrn.MXCAsCYPOcHok0Tfkg9akBizYYdeW4A5J7f66mYi",
+      "id": "NT-kMVa"
+    },
+    {
+      "email": "dd@mail.com",
+      "password": "$2a$10$JHuUoQgZ6G1Xjh9W8JGk.u.8SnupCYaNDz9HVD3/b20Rt1RPmSOwm",
+      "id": "l2jdiLL"
+    },
+    {
+      "email": "moh@gmail.com",
+      "password": "$2a$10$BWFGllc6vczuFd1IXFKNzudt070fkosJo2cZsLrY4.DuNrvpBCbnq",
+      "id": "R9bqJER"
+    },
+    {
+      "email": "mohammad@gmail.com",
+      "password": "$2a$10$6PIDNWLEdaV9TC1crJnq/Oii49Yg9m8eAelb8dJC8F7WHNLQoTd1y",
+      "id": "ZuuPCJf"
+    }
+  ]
+}

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
+import { Route, Routes } from "react-router-dom";
+import ProtectedRoute from "./auth/protected-route/ProtectedRoute";
+import { ContextAuthProvider } from "./context/context-auth/ContextAuth";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const {authenticated} = useContext(ContextAuthProvider);
+
+    return (
+        <div>
+            <Routes>
+                <Route path="/" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route
+                    path="/home"
+                    element={
+                        <ProtectedRoute authenticated={authenticated}/>
+                    }
+                />
+            </Routes>
+        </div>
+    );
+};
 
 export default App;

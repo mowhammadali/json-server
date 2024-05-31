@@ -1,0 +1,6 @@
+npm i json-server-auth@2.0.2
+
+axios.post('http://localhost:3002/register')
+
+run db.json with command: json-server-auth db.json --port 3002
+
